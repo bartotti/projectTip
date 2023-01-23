@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Tipcal</title>
+  </head>
+  <body>
+    <section id="sale-tax-section">
+      <h1>Calculate Sales Tax</h1>
+      <input type="text" id="user-amount-input" class="input-text"/>
+      <select id="tax-rate-select" >
+        <option value="0.0875">8%</option>
+        <option value="0.010">10%</option>
+        <option value="0.012">12%</option>
+      </select>
+      <button id="calculate-tax-button" class="btn" >Calculate Tax</button>
+      <p id="display-after-tax">0</p>
+    </section>
+
+    <section id="dinner-cal-section">
+      <h1>Calculate resruante recommanded tips</h1>
+      <p>Total amount</p>
+      <input type="text" id="dinner-amount-input" class="input-text"/>
+      <p>Local sales tax percentage</p>
+
+      <select id="local-tax-rate-select">
+        <option value="0.0875">8%</option>
+      </select>
+      <p id="15%">15% =</p>
+      <p id="18%">18% =</p>
+      <p id="20%">20% =</p>
+      <p id="22%">22% =</p>
+      <h3>Total amount</h1>
+      <p id="dinner-total-amount">0</p>
+      <button id="do-math-button" class="btn" >Do the Math</button>
+    </section>
+
+    <section id="cash-back-section">
+      <p>Product price</p>
+      <input type="text" id="cash-back-price-input" class="input-text"/>
+      <p>Cash Back percentages</p>
+      <select id="cash-back-select">
+        <option value="0.015">1.5%</option>
+        <option value="0.01">1%</option>
+        <option value="0.02">2%</option>
+        <option value="0.025">2.5%</option>
+        <option value="0.03">3%</option>
+      </select>
+      <button id="cash-back-button" class="btn">Get CashBack</button>
+      <p id="display-cash-back"></p>
+    </section>
+
+    <script src="js/sale_tax_cal.js"></script>
+    <script src="js/cash_back_cal.js"></script>
+    <script src="js/dinner_cal.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
